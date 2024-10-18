@@ -8,6 +8,7 @@ import java.util.List;
 @RequestMapping("/api/messages")
 public class MessageController {
 
+
     private final List<Message> messages = new ArrayList<>();
 
     @PostMapping

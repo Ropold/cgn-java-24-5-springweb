@@ -18,10 +18,10 @@ public class HelloController {
         return "Hello, " + name + "!";
     }
 
-//    @GetMapping("/{name}")
-//    public String sayName(@PathVariable String name, @RequestParam String search) {
-//        System.out.println(name);
-//        System.out.println(search);
-//        return "Hallo: " + name + " search: " + search;
-//    }
+    @GetMapping("/search/{name}")
+    public String sayName(@PathVariable String name, @RequestParam String search) {
+        System.out.println(name);
+        System.out.println(search);
+        return "Hallo: " + name + " search: " + search;
+    }
 }
